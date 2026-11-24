@@ -11,57 +11,77 @@
     </head>
 
     <body>
-        
+
         <header>
-
             <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-
                 <div class="container">
-
                     <a class="navbar-brand" href="index.html">CafePlus</a>
-
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-
                         <span class="navbar-toggler-icon"></span>
-
                     </button>
 
                     <div class="collapse navbar-collapse" id="mainNav">
-
                         <ul class="navbar-nav ms-auto">
-
                             <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                             <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
                             <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
-
                         </ul>
-
                     </div>
-
                 </div>
-
             </nav>
-
         </header>
 
-        <main>
+        <h1 class="text-center">Where to find us:</h1>
+        <!-- Google Maps iframe -->
+        <iframe class="centered" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8517.188864246344!2d174.78083223283969!3d-36.906107867043886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0d48bfbc65b04b%3A0x1708b7897b4f9e90!2sCafe%20Plus!5e0!3m2!1sen!2sau!4v1793070025800!5m2!1sen!2sau" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        
+        <br>
 
-            <section class="bg-light py-5 text-center">
+        <!-- Sign up form. -->
+        <form>
+            <div>
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" placeholder="Enter your email..." required autocomplete="email">
+            </div>
+            <div>
+                <label for="emailMessage">Message: </label>
+                <textarea class="bigTextBox" name="emailMessage" id="emailMessage" placeholder="Enter your message..." required minlength="8"></textarea>
+            </div>
+            <div>
+                <button type="submit" class="btn btn-primary">Send Email</button>
+            </div>
+        </form>
 
-                <div class="container">
+        <br>        
 
-                    <h1 class="display-4">WOW!.. But still NO! :D</h1>
-                    
-                </div>
+        <h2 class="text-center">Opening hours:</h2>
 
-            </section>
+        <!-- Table. -->
+        <table class="centeredTable">
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Hours</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mon-Fri:</td>
+                    <td>9:00AM-4:30PM</td>
+                </tr>
+                <tr>
+                    <td>Sat:</td>
+                    <td>9:00AM-2:30PM</td>
+                </tr>
+                <tr>
+                    <td>Sun:</td>
+                    <td>Closed</td>
+                </tr>
+            </tbody>
+        </table>
 
-        </main>
-
-        <footer class="bg-dark text-white py-3 text-center">
-
+        <footer class="text-white py-3 text-center">
             <p class="mb-0">&copy; 2026 CafePlus, Moorabbin VIC</p>
-
         </footer>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script> 
